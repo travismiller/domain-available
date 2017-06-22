@@ -21,12 +21,12 @@ if ($domain) {
   $available = endsWith($result, 'AVAILABLE');
   $color = $available ? '009900' : '990000';
   $title = sprintf("$DOMAIN is %s", $available ? 'available!' : 'not available.');
-  $canonical = sprintf("https://%s/?d=%s", getenv('BASE_URL'), $DOMAIN);
+  $canonical = sprintf("%s?d=%s", getenv('BASE_URL'), $DOMAIN);
 } else {
   $DOMAIN = 'Available?';
   $color = '000099';
   $title = 'Is that domain available?';
-  $canonical = sprintf("https://%s/", getenv('BASE_URL'));
+  $canonical = sprintf("%s", getenv('BASE_URL'));
 }
 
 $img = "https://via.placeholder.com/350x150/$color/ffffff/?text=$DOMAIN";
