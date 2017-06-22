@@ -1,0 +1,12 @@
+{
+    "name": "travismiller/domain-available",
+    "authors": [
+        {
+            "name": "Travis Miller",
+            "email": "travis@travismiller.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
+    }
+}
